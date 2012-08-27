@@ -47,8 +47,10 @@
 " MakeGreen
 "    Generic test runner that works with nose
 "
-"Taglist
-"    provides an overview of the structure of source code files
+" Taglist
+"    Provides an overview of the structure of source code files
+" Minibufexpl
+"    Let vim could edit multi-files in tabs
 "
 " ==========================================================
 " Shortcuts
@@ -139,6 +141,8 @@ let Tlist_Exit_OnlyWindow = 1
 let Tlist_Ctags_Cmd = '/opt/local/bin/ctags'
 map <leader>t :TlistToggle<CR>
 
+" Set buffer change
+map <leader>b :bNext<CR>
 " ==========================================================
 " Pathogen - Allows us to organize our vim plugins
 " ==========================================================
